@@ -19,10 +19,13 @@
     const map = L.map('map').setView([20, 0], 2); // środek świata
 
     // Podkład mapy (OpenStreetMap)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© OpenStreetMap'
-    }).addTo(map);
+    L.tileLayer(
+    'https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
+    {
+    attribution: '© OpenStreetMap © CARTO',
+    maxZoom: 19
+    }
+).addTo(map);
 
     // Funkcja do wczytywania GeoJSON
     function loadLayer(url, options) {
@@ -54,13 +57,24 @@
 
     // Miasta i miejsca
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
-      pointToLayer: (feature, latlng) => {
-        const nameBenaka = BENAKA_NAMES[feature.properties.name] || feature.properties.name;
-        return L.circleMarker(latlng, { 
-          radius: 5, fillColor: "#ff0000", color: "#000", weight: 1, fillOpacity: 0.8 
-        }).bindPopup(nameBenaka);
-      }
+  pointToLayer: (feature, latlng) => {
+    const original = feature.properties.name;
+    const benaka = BENAKA_NAMES[original] || original;
+
+    return L.circleMarker(latlng, {
+      radius: 4,
+      fillColor: "#b30000",
+      color: "#000",
+      weight: 1,
+      fillOpacity: 0.9
+    }).bindTooltip(benaka, {
+      permanent: true,
+      direction: "top",
+      offset: [0, -6],
+      className: "city-label"
     });
+  }
+});
   </script>
 </body>
 </html>
