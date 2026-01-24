@@ -20,11 +20,12 @@
 
     // Podkład mapy (OpenStreetMap)
     L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/voyager_nolabels/{z}/{x}/{y}{r}.png',
-    {
-    attribution: '© OpenStreetMap © CARTO',
+  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
+  {
+    attribution: "© OpenStreetMap © CARTO",
+    subdomains: "abcd",
     maxZoom: 19
-    }
+  }
 ).addTo(map);
 
     // Funkcja do wczytywania GeoJSON
@@ -85,6 +86,7 @@
     });
   }
 });
+
   </script>
 </body>
 </html>
