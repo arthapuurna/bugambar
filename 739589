@@ -1,0 +1,9 @@
+const benaNames = {
+  "Germany": "Jerman",
+  "Poland": "Polan",
+  "Warsaw": "Warshaawa",
+
+  // możesz dodawać w nieskończoność
+  // "France": "Fransa",
+  // "Berlin": "Berin"
+};
