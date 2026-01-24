@@ -54,65 +54,33 @@ function loadLayer(url, options) {
     .then(data => L.geoJSON(data, options).addTo(map));
 }
 
-/* =========================
-   WODY
-========================= */
+// Wody, jeziora, morza
 loadLayer("data/water.geojson", {
-  style: {
-    color: "#3b6fb6",
-    weight: 1,
-    fillColor: "#6fa8dc",
-    fillOpacity: 0.8
-  }
+  style: { color: "#3b6fb6", fillColor: "#6fa8dc", fillOpacity: 0.8 }
 });
 
-/* =========================
-   DROGI KRAJOWE
-========================= */
-loadLayer("data/roads_national.geojson", {
-  style: {
-    color: "#d95f02",
-    weight: 1.2
-  }
-});
-
-/* =========================
-   GRANICE PAŃSTW
-========================= */
+// Granice państw (ciągła linia)
 loadLayer("data/borders_countries.geojson", {
-  style: {
-    color: "#000",
-    weight: 2
-  }
+  style: { color: "#000000", weight: 2 }
 });
 
-/* =========================
-   GRANICE ADMIN 1
-========================= */
+// Granice administracyjne (przerywana linia)
 loadLayer("data/borders_admin1.geojson", {
-  style: {
-    color: "#000",
-    weight: 1,
-    dashArray: "6,4"
-  }
+  style: { color: "#000000", weight: 1, dashArray: "6,4" }
 });
 
-/* =========================
-   NAZWY PAŃSTW I MIAST
-========================= */
+// Drogi krajowe
+loadLayer("data/roads_national.geojson", {
+  style: { color: "#d95f02", weight: 1.2 }
+});
+
+// Miasta i miejsca
 loadLayer("data/places.geojson", {
   pointToLayer: (feature, latlng) => {
-    const cls = feature.properties.place === "city"
-      ? "city-label"
-      : "country-label";
-
-    return L.marker(latlng, {
-      icon: L.divIcon({
-        className: cls,
-        html: benaName(feature.properties.name)
-      })
-    });
+    return L.circleMarker(latlng, { radius: 5, fillColor: "#ff0000", color: "#000", weight: 1, fillOpacity: 0.8 })
+      .bindPopup(feature.properties.name); // tu możesz potem podmienić nazwy na Benakasemmemii
   }
+});
 });
 
 </script>
