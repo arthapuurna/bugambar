@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Benakasemmemii-de Bugambar</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <style>
+    html, body { margin: 0; height: 100%; }
+    #map { height: 100%; background: #eef2f3; }
+
+    .country-label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    .city-label {
+      font-size: 11px;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="names.js"></script>
+
+<script>
+/* =========================
+   INICJALIZACJA MAPY
+========================= */
+const map = L.map('map', {
+  zoomSnap: 0.25,
+  worldCopyJump: true
+}).setView([20, 0], 2);
+
+/* =========================
+   FUNKCJA PODMIANY NAZW
+========================= */
+function benaName(osmName) {
+  return benaNames[osmName] || osmName;
+}
+
+/* =========================
+   ŁADOWANIE WARSTW
+========================= */
+function loadLayer(url, options) {
+  fetch(url)
+    .then(r => r.json())
+    .then(data => L.geoJSON(data, options).addTo(map));
+}
+
+/* =========================
+   WODY
+========================= */
+loadLayer("data/water.geojson", {
+  style: {
+    color: "#3b6fb6",
+    weight: 1,
+    fillColor: "#6fa8dc",
+    fillOpacity: 0.8
+  }
+});
+
+/* =========================
+   DROGI KRAJOWE
+========================= */
+loadLayer("data/roads_national.geojson", {
+  style: {
+    color: "#d95f02",
+    weight: 1.2
+  }
+});
+
+/* =========================
+   GRANICE PAŃSTW
+========================= */
+loadLayer("data/borders_countries.geojson", {
+  style: {
+    color: "#000",
+    weight: 2
+  }
+});
+
+/* =========================
+   GRANICE ADMIN 1
+========================= */
+loadLayer("data/borders_admin1.geojson", {
+  style: {
+    color: "#000",
+    weight: 1,
+    dashArray: "6,4"
+  }
+});
+
+/* =========================
+   NAZWY PAŃSTW I MIAST
+========================= */
+loadLayer("data/places.geojson", {
+  pointToLayer: (feature, latlng) => {
+    const cls = feature.properties.place === "city"
+      ? "city-label"
+      : "country-label";
+
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: cls,
+        html: benaName(feature.properties.name)
+      })
+    });
+  }
+});
+</script>
+</body>
+</html>
