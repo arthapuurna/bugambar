@@ -64,7 +64,7 @@
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
     const original = feature.properties.name;
-    const bnkNames = BNK_NAMES[original] || original;
+    const bnkNames = bnkNames[original] || original;
 
     return L.circleMarker(latlng, {
       radius: 4,
