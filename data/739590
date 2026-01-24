@@ -1,0 +1,5 @@
+(
+  way["natural"="water"];
+  way["waterway"~"river|canal"];
+);
+out geom;

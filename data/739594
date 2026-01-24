@@ -1,0 +1,5 @@
+(
+  node["place"="city"];
+  relation["boundary"="administrative"]["admin_level"="2"];
+);
+out center;
