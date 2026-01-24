@@ -114,6 +114,9 @@ loadLayer("data/places.geojson", {
     });
   }
 });
+
+<!-- test -->
+
 </script>
 </body>
 </html>
