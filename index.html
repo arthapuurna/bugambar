@@ -64,7 +64,7 @@
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
     const original = feature.properties.name;
-    const benaka = BENAKA_NAMES[original] || original;
+    const bnkNames = BNK_NAMES[original] || original;
 
     return L.circleMarker(latlng, {
       radius: 4,
@@ -72,7 +72,7 @@
       color: "#000",
       weight: 1,
       fillOpacity: 0.9
-    }).bindTooltip(benaka, {
+    }).bindTooltip(bnkNames, {
       permanent: true,
       direction: "top",
       offset: [0, -6],
