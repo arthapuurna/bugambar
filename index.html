@@ -33,27 +33,27 @@
     }
 
     // Woda (jeziora, morza, stawy)
-    loadLayer("data/water.geojson", {
+    loadLayer("loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/water.geojson", {
       style: { color: "#3b6fb6", fillColor: "#6fa8dc", fillOpacity: 0.8 }
     });
 
     // Granice państw (ciągła linia)
-    loadLayer("data/borders_countries.geojson", {
+    loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/borders_countries.geojson", {
       style: { color: "#000000", weight: 2 }
     });
 
     // Granice administracyjne (przerywana linia)
-    loadLayer("data/borders_admin1.geojson", {
+    loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/borders_admin1.geojson", {
       style: { color: "#000000", weight: 1, dashArray: "6,4" }
     });
 
     // Drogi krajowe
-    loadLayer("data/roads_national.geojson", {
+    loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/roads_national.geojson", {
       style: { color: "#d95f02", weight: 1.2 }
     });
 
     // Miasta i miejsca
-    loadLayer("data/places.geojson", {
+    loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
       pointToLayer: (feature, latlng) => {
         const nameBenaka = BENAKA_NAMES[feature.properties.name] || feature.properties.name;
         return L.circleMarker(latlng, { 
