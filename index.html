@@ -6,13 +6,15 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     #map { height: 100vh; width: 100%; }
-    /* WSPÓLNE — zero białych ramek */
+/* WSPÓLNE — zero białych ramek, tło i cień */
 .leaflet-tooltip {
-  background: none;
-  border: none;
-  box-shadow: none;
-  color: #000;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #000 !important;
   font-family: sans-serif;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* PAŃSTWA */
@@ -20,7 +22,11 @@
   font-size: 18px;
   font-weight: bold;
   color: #000;
-  text-transform: uppercase;
+  text-transform: uppercase; /* wielkie litery */
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
 
 /* MIASTA */
@@ -28,6 +34,10 @@
   font-size: 12px;
   font-weight: normal;
   color: #111;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
   </style>
 </head>
