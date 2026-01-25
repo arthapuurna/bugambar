@@ -109,7 +109,7 @@
 {"type":"Feature","properties":{"name":"Tanzaniiya","kind":"country"},"geometry":{"type":"Point","coordinates":[34.8888,-6.3690]}},
 {"type":"Feature","properties":{"name":"Tehraan","kind":"city"},"geometry":{"type":"Point","coordinates":[51.3890,35.6892]}},
 {"type":"Feature","properties":{"name":"Thainaada","kind":"country"},"geometry":{"type":"Point","coordinates":[100.9925,15.8700]}},
-{"type":"Feature","properties":{"name":"Thyencin","kind":"city"},"geometry":{"type":"Point","coordinates":[6.1423,46.2044]}},
+{"type":"Feature","properties":{"name":"Thyencin","kind":"city"},"geometry":{"type":"Point","coordinates":[117.0000,38.0000]}},
 {"type":"Feature","properties":{"name":"Toukyou","kind":"city"},"geometry":{"type":"Point","coordinates":[139.6917,35.6895]}},
 {"type":"Feature","properties":{"name":"Tunkkwan","kind":"city"},"geometry":{"type":"Point","coordinates":[121.5398,25.0478]}},
 {"type":"Feature","properties":{"name":"Turkiya","kind":"country"},"geometry":{"type":"Point","coordinates":[35.2433,38.9637]}},
