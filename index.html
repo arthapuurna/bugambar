@@ -87,15 +87,14 @@
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
 
-    // PAŃSTWA — tylko tekst
+    // PAŃSTWA — tylko napis, bez kropki
     if (feature.properties.type === "country") {
       return L.marker(latlng, {
-        icon: L.divIcon({
-          className: "country-label",
-          html: feature.properties.name,
-          iconSize: [0, 0]
-        }),
-        interactive: false
+        opacity: 0   // marker niewidoczny
+      }).bindTooltip(feature.properties.name, {
+        permanent: true,
+        direction: "center",
+        className: "country-label"
       });
     }
 
