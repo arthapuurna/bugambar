@@ -30,7 +30,7 @@
 {"type":"Feature","properties":{"name":"Douha","kind":"city"},"geometry":{"type":"Point","coordinates":[51.5309,25.2855]}},
 {"type":"Feature","properties":{"name":"Dubai","kind":"city"},"geometry":{"type":"Point","coordinates":[55.2962,25.2760]}},
 {"type":"Feature","properties":{"name":"Dyuseldorfu","kind":"city"},"geometry":{"type":"Point","coordinates":[6.7735,51.2277]}},
-{"type":"Feature","properties":{"name":"Edinbara (Edinburgh)","kind":"city"},"geometry":{"type":"Point","coordinates":[-3.1883,55.9533]}},
+{"type":"Feature","properties":{"name":"Edinbara","kind":"city"},"geometry":{"type":"Point","coordinates":[-3.1883,55.9533]}},
 {"type":"Feature","properties":{"name":"Eijiptu","kind":"country"},"geometry":{"type":"Point","coordinates":[30.8025,26.8206]}},
 {"type":"Feature","properties":{"name":"Espan","kind":"country"},"geometry":{"type":"Point","coordinates":[-3.7492,40.4637]}},
 {"type":"Feature","properties":{"name":"Ethyopya","kind":"country"},"geometry":{"type":"Point","coordinates":[39.7823,9.1450]}},
