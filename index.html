@@ -85,19 +85,36 @@
     });
 
     // Miasta i miejsca
-    loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
+    loadLayer("data/places.geojson", {
   pointToLayer: (feature, latlng) => {
 
-    // PAŃSTWA — tylko napis, bez kropki
+    // PAŃSTWA — tylko tekst
     if (feature.properties.type === "country") {
       return L.marker(latlng, {
-        opacity: 0   // marker niewidoczny
-      }).bindTooltip(feature.properties.name, {
-        permanent: true,
-        direction: "center",
-        className: "country-label"
+        icon: L.divIcon({
+          className: "country-label",
+          html: feature.properties.name,
+          iconSize: [0, 0]
+        }),
+        interactive: false
       });
     }
+
+    // MIASTA — kropka + napis
+    return L.circleMarker(latlng, {
+      radius: 4,
+      fillColor: "#b30000",
+      color: "#000",
+      weight: 1,
+      fillOpacity: 0.9
+    }).bindTooltip(feature.properties.name, {
+      permanent: true,
+      direction: "top",
+      offset: [0, -6],
+      className: "city-label"
+    });
+  }
+});
 
     // MIASTA — kropka + napis
     return L.circleMarker(latlng, {
