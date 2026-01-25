@@ -1,5 +1,82 @@
-(
-  node["place"="city"];
-  relation["boundary"="administrative"]["admin_level"="2"];
-);
-out center;
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "India",
+        "type": "country"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.9629, 22.5937]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "United States",
+        "type": "country"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.5795, 39.8283]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "China",
+        "type": "country"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.1954, 35.8617]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New York",
+        "type": "city"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0060, 40.7128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mumbai",
+        "type": "city"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.8777, 19.0760]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Delhi",
+        "type": "city"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2090, 28.6139]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beijing",
+        "type": "city"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4074, 39.9042]
+      }
+    }
+  ]
+}
