@@ -59,7 +59,7 @@
 {"type":"Feature","properties":{"name":"Kolkaataa","kind":"city"},"geometry":{"type":"Point","coordinates":[88.3639,22.5726]}},
 {"type":"Feature","properties":{"name":"Kwankcou","kind":"city"},"geometry":{"type":"Point","coordinates":[113.5300,23.1291]}},
 {"type":"Feature","properties":{"name":"Kyobenhaun","kind":"city"},"geometry":{"type":"Point","coordinates":[12.5681,55.6761]}},
-{"type":"Feature","properties":{"name":"Kyolan","kind":"city"},"geometry":{"type":"Point","coordinates":[4.8994,52.3791]}},
+{"type":"Feature","properties":{"name":"Kyolan","kind":"city"},"geometry":{"type":"Point","coordinates":[6.9000,50.9000]}},
 {"type":"Feature","properties":{"name":"Kyouto","kind":"city"},"geometry":{"type":"Point","coordinates":[135.7681,35.0116]}},
 {"type":"Feature","properties":{"name":"Lakhnau","kind":"city"},"geometry":{"type":"Point","coordinates":[80.9462,26.8467]}},
 {"type":"Feature","properties":{"name":"Lisbouna","kind":"city"},"geometry":{"type":"Point","coordinates":[-9.1393,38.7169]}},
