@@ -4,7 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "India",
+        "name": "Bhaarata",
         "type": "country"
       },
       "geometry": {
@@ -15,18 +15,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "United States",
-        "type": "country"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-98.5795, 39.8283]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "China",
+        "name": "Ciina",
         "type": "country"
       },
       "geometry": {
@@ -37,12 +26,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "New York",
+        "name": "Dillii",
         "type": "city"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-74.0060, 40.7128]
+        "coordinates": [77.2090, 28.6139]
       }
     },
     {
@@ -59,18 +48,29 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Delhi",
+        "name": "Nawa-Yorku",
         "type": "city"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [77.2090, 28.6139]
+        "coordinates": [-74.0060, 40.7128]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Beijing",
+        "name": "Onattadanaadas",
+        "type": "country"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.5795, 39.8283]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peicin",
         "type": "city"
       },
       "geometry": {
