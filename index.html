@@ -6,6 +6,29 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     #map { height: 100vh; width: 100%; }
+    /* WSPÓLNE — zero białych ramek */
+.leaflet-tooltip {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #000;
+  font-family: sans-serif;
+}
+
+/* PAŃSTWA */
+.country-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+/* MIASTA */
+.city-label {
+  font-size: 12px;
+  font-weight: normal;
+  color: #111;
+}
   </style>
 </head>
 <body>
@@ -64,21 +87,26 @@
     // Miasta i miejsca
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
-    const original = feature.properties.name;
 
-    // słownik nazw (zabezpieczony)
-    const nameMap = window.bnkNames || {};
+    // PAŃSTWA — tylko napis, bez kropki
+    if (feature.properties.type === "country") {
+      return L.marker(latlng, {
+        opacity: 0   // marker niewidoczny
+      }).bindTooltip(feature.properties.name, {
+        permanent: true,
+        direction: "center",
+        className: "country-label"
+      });
+    }
 
-    // pojedyncza etykieta
-    const label = nameMap[original] || original;
-
+    // MIASTA — kropka + napis
     return L.circleMarker(latlng, {
       radius: 4,
       fillColor: "#b30000",
       color: "#000",
       weight: 1,
       fillOpacity: 0.9
-    }).bindTooltip(label, {
+    }).bindTooltip(feature.properties.name, {
       permanent: true,
       direction: "top",
       offset: [0, -6],
@@ -86,7 +114,6 @@
     });
   }
 });
-
   </script>
 </body>
 </html>
