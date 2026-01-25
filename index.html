@@ -89,14 +89,18 @@
 
     // PAŃSTWA — tylko napis, bez kropki
     if (feature.properties.type === "country") {
-      return L.marker(latlng, {
-        opacity: 0   // marker niewidoczny
-      }).bindTooltip(feature.properties.name, {
-        permanent: true,
-        direction: "center",
-        className: "country-label"
-      });
-    }
+  return L.marker(latlng, {
+    icon: L.divIcon({ 
+      html: '', 
+      className: 'country-icon', 
+      iconSize: [0,0] 
+    })
+  }).bindTooltip(feature.properties.name, {
+    permanent: true,
+    direction: "center",
+    className: "country-label"
+  });
+}
 
     // MIASTA — kropka + napis
     return L.circleMarker(latlng, {
