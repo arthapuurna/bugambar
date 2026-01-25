@@ -83,7 +83,7 @@
     });
 
     // Miasta i miejsca
-    loadLayer("data/places.geojson", {
+    loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
 
     // PAŃSTWA — tylko tekst
@@ -114,21 +114,6 @@
   }
 });
 
-    // MIASTA — kropka + napis
-    return L.circleMarker(latlng, {
-      radius: 4,
-      fillColor: "#b30000",
-      color: "#000",
-      weight: 1,
-      fillOpacity: 0.9
-    }).bindTooltip(feature.properties.name, {
-      permanent: true,
-      direction: "top",
-      offset: [0, -6],
-      className: "city-label"
-    });
-  }
-});
   </script>
 </body>
 </html>
