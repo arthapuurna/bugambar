@@ -181,10 +181,6 @@ map.on("mousedown touchstart", e => {
   }, 600);
 });
 
-map.on("mouseup touchend touchmove", () => {
-  clearTimeout(pressTimer);
-});
-
 function showContextMenu(latlng) {
   L.popup()
     .setLatLng(latlng)
@@ -196,6 +192,11 @@ function showContextMenu(latlng) {
     `)
     .openOn(map);
 }
+
+
+map.on("mouseup touchend touchmove", () => {
+  clearTimeout(pressTimer);
+});
 
   </script>
 </body>
