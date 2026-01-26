@@ -151,7 +151,7 @@ function updateLabelsVisibility() {
   const zoom = map.getZoom();
 
   /* ===== UURS ===== */
-  if (zoom < 6) {
+  if (zoom < 7) {
     map.removeLayer(cityLayer);
   } else {
     map.addLayer(cityLayer);
@@ -161,7 +161,7 @@ function updateLabelsVisibility() {
   countryLayer.eachLayer(layer => {
     const name = layer.feature.properties.name;
 
-    if (zoom < 4 && !countryZoomExceptions.includes(name)) {
+    if (zoom < 5 && !countryZoomExceptions.includes(name)) {
       layer.closeTooltip();
     } else {
       layer.openTooltip();
