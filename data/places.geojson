@@ -99,7 +99,7 @@
 {"type":"Feature","properties":{"name":"Shanghai","kind":"city"},"geometry":{"type":"Point","coordinates":[121.4737,31.2304]}},
 {"type":"Feature","properties":{"name":"Shencen","kind":"city"},"geometry":{"type":"Point","coordinates":[114.0579,22.5431]}},
 {"type":"Feature","properties":{"name":"Shenyan","kind":"city"},"geometry":{"type":"Point","coordinates":[123.4294,41.8057]}},
-{"type":"Feature","properties":{"name":"Singhapura","kind":"city"},"geometry":{"type":"Point","coordinates":[103.8198,1.3521]}},
+{"type":"Feature","properties":{"name":"Singhapura","kind":"country"},"geometry":{"type":"Point","coordinates":[103.8198,1.3521]}},
 {"type":"Feature","properties":{"name":"Soul","kind":"city"},"geometry":{"type":"Point","coordinates":[126.9780,37.5665]}},
 {"type":"Feature","properties":{"name":"Stokholmu","kind":"city"},"geometry":{"type":"Point","coordinates":[18.0686,59.3293]}},
 {"type":"Feature","properties":{"name":"Strasburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[7.7521,48.5734]}},
