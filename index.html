@@ -59,6 +59,27 @@
         .catch(err => console.error('Tapakan-no nangate-no buubuu:', url, err));
     }
 
+    // Uurs-no tapakan
+    const cityLayer = L.layerGroup().addTo(map);
+    const countryLayer = L.layerGroup().addTo(map);
+
+    // Naadas-no ekiwisakiis
+    const countryZoomExceptions = [
+  "Onattadanaadas",
+  "Ciina",
+  "Ruus",
+  "Brasiil",
+  "Bhaarata",
+  "Jerman",
+  "Kanada",
+  "Frans",
+  "Onattaraajanaada",
+  "Espan",
+  "Austraalya",
+  "Sa'uudii Arabya",
+  "Japan"
+];
+
     // Mu (laagu, samudra, talaga)
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/water.geojson", {
       style: {
@@ -149,27 +170,6 @@ function updateLabelsVisibility() {
 map.on("zoomend", updateLabelsVisibility);
 updateLabelsVisibility();
 
-
-    // Uurs-no tapakan
-    const cityLayer = L.layerGroup().addTo(map);
-    const countryLayer = L.layerGroup().addTo(map);
-
-    // Naadas-no ekiwisakiis
-    const countryZoomExceptions = [
-  "Onattadanaadas",
-  "Ciina",
-  "Ruus",
-  "Brasiil",
-  "Bhaarata",
-  "Jerman",
-  "Kanada",
-  "Frans",
-  "Onattaraajanaada",
-  "Espan",
-  "Austraalya",
-  "Sa'uudii Arabya",
-  "Japan"
-];
   </script>
 </body>
 </html>
