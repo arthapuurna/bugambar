@@ -58,6 +58,9 @@
         .catch(err => console.error('Tapakan-no nangate-no buubuu:', url, err));
     }
 
+    // Uurs-no tapakan
+    const cityLayer = L.layerGroup().addTo(map);
+
     // Mu (laagu, samudra, talaga)
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/water.geojson", {
       style: {
@@ -85,37 +88,51 @@
     // Uurs dan nedas
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
+    if (feature.properties.kind === "city") {
+      const marker = L.circleMarker(latlng, {
+        radius: 4,
+        fillColor: "#b30000",
+        color: "#000",
+        weight: 1,
+        fillOpacity: 0.9
+      }).bindTooltip(feature.properties.name, {
+        permanent: true,
+        direction: "top",
+        offset: [0, -6],
+        className: "city-label"
+      });
+      cityLayer.addLayer(marker);
+      return marker;
+    }
 
-    // NAADAS — onhii paatha, nii bindu
-    if (feature.properties.kind === "country") {
-  return L.marker(latlng, {
-    icon: L.divIcon({ 
-      html: '', 
-      className: 'country-icon', 
-      iconSize: [0,0] 
-    })
-  }).bindTooltip(feature.properties.name, {
-    permanent: true,
-    direction: "center",
-    className: "country-label"
-  });
-}
-
-    // UURS — bindu + paatha
-    return L.circleMarker(latlng, {
-      radius: 4,
-      fillColor: "#b30000",
-      color: "#000",
-      weight: 1,
-      fillOpacity: 0.9
+    return L.marker(latlng, {
+      icon: L.divIcon({ 
+        html: '', 
+        className: 'country-icon', 
+        iconSize: [0,0] 
+      })
     }).bindTooltip(feature.properties.name, {
       permanent: true,
-      direction: "top",
-      offset: [0, -6],
-      className: "city-label"
+      direction: "center",
+      className: "country-label"
     });
   }
 });
+
+function updateCityVisibility() {
+  const currentZoom = map.getZoom();
+  if (currentZoom < 4) {  // udaaharana-nei 4 = dika kalkalu-de 1 cm = 500 km ya jaganii jorkii-de aare
+    map.removeLayer(cityLayer);
+  } else {
+    map.addLayer(cityLayer);
+  }
+}
+
+// Badattakii-no muutakii-no thuthate
+map.on('zoomend', updateCityVisibility);
+
+// Kela-ke kolte
+updateCityVisibility();
 
   </script>
 </body>
