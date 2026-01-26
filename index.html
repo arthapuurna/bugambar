@@ -173,20 +173,10 @@ updateLabelsVisibility();
 
 /* MENYUU */
 
-let pressTimer;
-
-map.on("mousedown touchstart", e => {
-  map.dragging.disable(); // durute-no kaalilii daukarbilattakii
-
-  pressTimer = setTimeout(() => {
-    showContextMenu(e.latlng);
-  }, 600);
+map.on("contextmenu", e => {
+  showContextMenu(e.latlng);
 });
 
-map.on("mouseup touchend", () => {
-  clearTimeout(pressTimer);
-  map.dragging.enable(); // durute-no karbilattaki
-});
   </script>
 </body>
 </html>
