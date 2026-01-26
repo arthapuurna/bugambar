@@ -37,26 +37,6 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <script>
-    // Bugambar-no kelakii
-    const map = L.map('map').setView([20, 0], 2); // jaganpupu
-
-    // Bugambar-no tapakan (OpenStreetMap)
-    L.tileLayer(
-  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
-  {
-    attribution: "© OpenStreetMap © CARTO",
-    subdomains: "abcd",
-    maxZoom: 19
-  }
-).addTo(map);
-
-    // GeoJSON fail-ong nangate-ke kaarya
-    function loadLayer(url, options) {
-      fetch(url)
-        .then(r => r.json())
-        .then(data => L.geoJSON(data, options).addTo(map))
-        .catch(err => console.error('Tapakan-no nangate-no buubuu:', url, err));
-    }
 
     // Uurs-no tapakan
     const cityLayer = L.layerGroup().addTo(map);
@@ -78,6 +58,27 @@
   "Sa'uudii Arabya",
   "Japan"
 ];
+
+    // Bugambar-no kelakii
+    const map = L.map('map').setView([20, 0], 2); // jaganpupu
+
+    // Bugambar-no tapakan (OpenStreetMap)
+    L.tileLayer(
+  "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
+  {
+    attribution: "© OpenStreetMap © CARTO",
+    subdomains: "abcd",
+    maxZoom: 19
+  }
+).addTo(map);
+
+    // GeoJSON fail-ong nangate-ke kaarya
+    function loadLayer(url, options) {
+      fetch(url)
+        .then(r => r.json())
+        .then(data => L.geoJSON(data, options).addTo(map))
+        .catch(err => console.error('Tapakan-no nangate-no buubuu:', url, err));
+    }
 
     // Mu (laagu, samudra, talaga)
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/water.geojson", {
