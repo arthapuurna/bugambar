@@ -21,7 +21,7 @@
 {"type":"Feature","properties":{"name":"Cennai","kind":"city"},"geometry":{"type":"Point","coordinates":[80.2707,13.0827]}},
 {"type":"Feature","properties":{"name":"Chenktu","kind":"city"},"geometry":{"type":"Point","coordinates":[104.0667,30.6667]}},
 {"type":"Feature","properties":{"name":"Chunkchin","kind":"city"},"geometry":{"type":"Point","coordinates":[106.5500,29.5628]}},
-{"type":"Feature","properties":{"name":"Ciina","kind":"country"},"geometry":{"type":"Point","coordinates":[103,6836,34,7036]}},
+{"type":"Feature","properties":{"name":"Ciina","kind":"country"},"geometry":{"type":"Point","coordinates":[103.6836,34.7036]}},
 {"type":"Feature","properties":{"name":"Daar-es-Salaam","kind":"city"},"geometry":{"type":"Point","coordinates":[39.2083,-6.7924]}},
 {"type":"Feature","properties":{"name":"Dablin","kind":"city"},"geometry":{"type":"Point","coordinates":[-6.2603,53.3498]}},
 {"type":"Feature","properties":{"name":"Danmarka","kind":"country"},"geometry":{"type":"Point","coordinates":[9.5018,56.2639]}},
