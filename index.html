@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="bnk">
 <head>
   <meta charset="UTF-8">
   <title>Benakasemmemii-de Bugambar</title>
@@ -7,19 +7,19 @@
   <style>
     #map { height: 100vh; width: 100%; }
 
-/* PAŃSTWA */
+/* NAADAS */
 .country-label {
   font-size: 18px;
   font-weight: bold;
   color: #000;
-  text-transform: uppercase; /* wielkie litery */
+  text-transform: uppercase; /* bada kiris */
   background: none;
   border: none;
   box-shadow: none;
   padding: 0;
 }
 
-/* MIASTA */
+/* UURS */
 .city-label {
   font-size: 12px;
   font-weight: normal;
@@ -37,10 +37,10 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
   <script>
-    // Inicjalizacja mapy
-    const map = L.map('map').setView([20, 0], 2); // środek świata
+    // Bugambar-no kelakii
+    const map = L.map('map').setView([20, 0], 2); // jaganpupu
 
-    // Podkład mapy (OpenStreetMap)
+    // Bugambar-no tapakan (OpenStreetMap)
     L.tileLayer(
   "https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
   {
@@ -50,16 +50,15 @@
   }
 ).addTo(map);
 
-    // Funkcja do wczytywania GeoJSON
+    // GeoJSON fail-ong nangate-ke kaarya
     function loadLayer(url, options) {
       fetch(url)
         .then(r => r.json())
         .then(data => L.geoJSON(data, options).addTo(map))
-        .catch(err => console.error('Błąd wczytywania warstwy:', url, err));
+        .catch(err => console.error('Tapakan-no nangate-no buubuu:', url, err));
     }
 
-    // Woda (jeziora, morza, stawy)
-    // Woda (jeziora, morza, stawy)
+    // Mu (laagu, samudra, talaga)
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/water.geojson", {
       style: {
     color: "#3b6fb6",
@@ -68,26 +67,26 @@
     }
     });
 
-    // Granice państw (ciągła linia)
+    // Naadas-no siimaas (raha tali)
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/borders_countries.geojson", {
       style: { color: "#000000", weight: 2 }
     });
 
-    // Granice administracyjne (przerywana linia)
+    // Naadas-no pikas-no siimaas (pirakada tali)
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/borders_admin1.geojson", {
       style: { color: "#000000", weight: 1, dashArray: "6,4" }
     });
 
-    // Drogi krajowe
+    // Naadawali
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/roads_national.geojson", {
       style: { color: "#d95f02", weight: 1.2 }
     });
 
-    // Miasta i miejsca
+    // Uurs dan nedas
     loadLayer("https://raw.githubusercontent.com/arthapuurna/bugambar/main/data/places.geojson", {
   pointToLayer: (feature, latlng) => {
 
-    // PAŃSTWA — tylko napis, bez kropki
+    // NAADAS — onhii paatha, nii bindu
     if (feature.properties.kind === "country") {
   return L.marker(latlng, {
     icon: L.divIcon({ 
@@ -102,7 +101,7 @@
   });
 }
 
-    // MIASTA — kropka + napis
+    // UURS — bindu + paatha
     return L.circleMarker(latlng, {
       radius: 4,
       fillColor: "#b30000",
