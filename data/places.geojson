@@ -54,8 +54,6 @@
 {"type":"Feature","properties":{"name":"Urdun","kind":"country"},"geometry":{"type":"Point","coordinates":[35.9301,31.9454]}},
 {"type":"Feature","properties":{"name":"Wenesweila","kind":"country"},"geometry":{"type":"Point","coordinates":[-66.5897,6.4238]}},
 {"type":"Feature","properties":{"name":"Wyetnaam","kind":"country"},"geometry":{"type":"Point","coordinates":[108.2772,14.0583]}},
-
-/* UURS */
 {"type":"Feature","properties":{"name":"Ahmadaabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[72.5873,23.0258]}},
 {"type":"Feature","properties":{"name":"Akra","kind":"city"},"geometry":{"type":"Point","coordinates":[-0.1969,5.5560]}},
 {"type":"Feature","properties":{"name":"Amsterdaam","kind":"city"},"geometry":{"type":"Point","coordinates":[4.8897,52.3740]}},
