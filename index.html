@@ -176,28 +176,17 @@ updateLabelsVisibility();
 let pressTimer;
 
 map.on("mousedown touchstart", e => {
-  pressTimer = setTimeout(() => {
-    showContextMenu(e.latlng);
-  }, 600);
+  map.dragging.disable(); // durute-no kaalilii daukarbilattakii
+
+  pressTimer = setTimeout(() => {
+    showContextMenu(e.latlng);
+  }, 600);
 });
 
-function showContextMenu(latlng) {
-  L.popup()
-    .setLatLng(latlng)
-    .setContent(`
-      <b>${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}</b><br>
-      📍 Getakiiwali-no kela<br>
-      🎯 Getakiiwali-no tuku<br>
-      ⭐ Bindu-ong rakam
-    `)
-    .openOn(map);
-}
-
-
-map.on("mouseup touchend touchmove", () => {
-  clearTimeout(pressTimer);
+map.on("mouseup touchend", () => {
+  clearTimeout(pressTimer);
+  map.dragging.enable(); // durute-no karbilattaki
 });
-
   </script>
 </body>
 </html>
