@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "features": [
-{"type":"Feature","properties":{"name":"Aljazair","kind":"country"},"geometry":{"type":"Point","coordinates":[3.0875,36.7323]}},
+{"type":"Feature","properties":{"name":"Aljazair","kind":"country"},"geometry":{"type":"Point","coordinates":[3.0875,28.1816]}},
 {"type":"Feature","properties":{"name":"Arjentiina","kind":"country"},"geometry":{"type":"Point","coordinates":[-63.6167,-38.4161]}},
 {"type":"Feature","properties":{"name":"Austraalya","kind":"country"},"geometry":{"type":"Point","coordinates":[133.7751,-25.2744]}},
 {"type":"Feature","properties":{"name":"Bangaladeisha","kind":"country"},"geometry":{"type":"Point","coordinates":[90.3563,23.6850]}},
@@ -56,6 +56,7 @@
 {"type":"Feature","properties":{"name":"Wyetnaam","kind":"country"},"geometry":{"type":"Point","coordinates":[108.2772,14.0583]}},
 {"type":"Feature","properties":{"name":"Ahmadaabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[72.5873,23.0258]}},
 {"type":"Feature","properties":{"name":"Akra","kind":"city"},"geometry":{"type":"Point","coordinates":[-0.1969,5.5560]}},
+{"type":"Feature","properties":{"name":"Aljazair","kind":"city"},"geometry":{"type":"Point","coordinates":[3.0875,36.7323]}},
 {"type":"Feature","properties":{"name":"Amsterdaam","kind":"city"},"geometry":{"type":"Point","coordinates":[4.8897,52.3740]}},
 {"type":"Feature","properties":{"name":"Ankara","kind":"city"},"geometry":{"type":"Point","coordinates":[32.8543,39.9199]}},
 {"type":"Feature","properties":{"name":"Bengaluuru","kind":"city"},"geometry":{"type":"Point","coordinates":[77.5937,12.9716]}},
