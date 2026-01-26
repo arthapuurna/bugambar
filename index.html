@@ -29,6 +29,13 @@
   box-shadow: none;
   padding: 0;
 }
+
+// MENYUU-NO JORATTAKII
+.country-label,
+.city-label {
+  pointer-events: none;
+}
+
   </style>
 </head>
 <body>
@@ -171,8 +178,12 @@ function updateLabelsVisibility() {
 map.on("zoomend", updateLabelsVisibility);
 updateLabelsVisibility();
 
-/* MENYUU */
+/* PRANAALIIMENYUU-NO RAMATTAKII */
+map.getContainer().addEventListener("contextmenu", e => {
+  e.preventDefault();
+});
 
+/* MENYUU */
 map.on("contextmenu", e => {
   showContextMenu(e.latlng);
 });
