@@ -73,7 +73,6 @@
   "Jerman",
   "Kanada",
   "Frans",
-  "Onattaraajanaada",
   "Indonesya",
   "Austraalya",
   "Aljazair",
@@ -171,6 +170,32 @@ function updateLabelsVisibility() {
 
 map.on("zoomend", updateLabelsVisibility);
 updateLabelsVisibility();
+
+/* MENYUU */
+
+let pressTimer;
+
+map.on("mousedown touchstart", e => {
+  pressTimer = setTimeout(() => {
+    showContextMenu(e.latlng);
+  }, 600);
+});
+
+map.on("mouseup touchend touchmove", () => {
+  clearTimeout(pressTimer);
+});
+
+function showContextMenu(latlng) {
+  L.popup()
+    .setLatLng(latlng)
+    .setContent(`
+      <b>${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}</b><br>
+      📍 Getakiiwali-no kela<br>
+      🎯 Getakiiwali-no tuku<br>
+      ⭐ Bindu-ong rakam
+    `)
+    .openOn(map);
+}
 
   </script>
 </body>
