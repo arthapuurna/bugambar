@@ -65,7 +65,7 @@
 {"type":"Feature","properties":{"name":"Lakhnau","kind":"city"},"geometry":{"type":"Point","coordinates":[80.9462,26.8467]}},
 {"type":"Feature","properties":{"name":"Lisbouna","kind":"city"},"geometry":{"type":"Point","coordinates":[-9.1393,38.7169]}},
 {"type":"Feature","properties":{"name":"London","kind":"city"},"geometry":{"type":"Point","coordinates":[-0.1276,51.5074]}},
-{"type":"Feature","properties":{"name":"Luksemburgu","kind":"country"},"geometry":{"type":"Point","coordinates":[6.1611,51.7400]}},
+{"type":"Feature","properties":{"name":"Luksemburgu","kind":"country"},"geometry":{"type":"Point","coordinates":[6.1611,49.7400]}},
 {"type":"Feature","properties":{"name":"Luksemburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[6.1296,49.6117]}},
 {"type":"Feature","properties":{"name":"Madiina","kind":"city"},"geometry":{"type":"Point","coordinates":[39.5692,24.5247]}},
 {"type":"Feature","properties":{"name":"Madridu","kind":"city"},"geometry":{"type":"Point","coordinates":[-3.7038,40.4168]}},
