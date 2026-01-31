@@ -219,13 +219,28 @@ function showContextMenu(latlng) {
       <div class="menu">
         <div class="menu-title">
           ${lat}, ${lng}</div>
-        <div class="menu-item">📥 Nedakalkalu-no pratilipi-ong kar</div>
+        <div class="menu-item" id="copy-coords">📋 Nedakalkalu-no pratilipi-ong kar</div>
         <div class="menu-item">📍 Getakiiwali-ong kela</div>
         <div class="menu-item">🎯 Getakiiwali-ong tuku</div>
         <div class="menu-item">⭐ Bindu-ong rakam</div>
       </div>
     `)
     .openOn(map);
+
+setTimeout(() => {
+  const btn = document.getElementById("copy-coords");
+  if (!btn) return;
+
+  btn.onclick = () => {
+    const { lat, lng } = window.lastContextLatLng;
+    const text = `${lat.toFixed(5)}, ${lng.toFixed(5)}`;
+
+    navigator.clipboard.writeText(text).then(() => {
+      btn.innerText = "✔ Pratilipi rakamda";
+    });
+  };
+}, 0);
+
 }
 
   </script>
