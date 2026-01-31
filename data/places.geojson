@@ -79,6 +79,8 @@
 {"type":"Feature","properties":{"name":"Hamburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[9.9937,53.5511]}},
 {"type":"Feature","properties":{"name":"Hiroshima","kind":"city"},"geometry":{"type":"Point","coordinates":[132.4553,34.3853]}},
 {"type":"Feature","properties":{"name":"Honkon","kind":"city"},"geometry":{"type":"Point","coordinates":[114.1095,22.3964]}},
+{"type":"Feature","properties":{"name":"Islaamaabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[73.10073,33.71085]}},
+{"type":"Feature","properties":{"name":"Jakarta","kind":"city"},"geometry":{"type":"Point","coordinates":[106.82700,-6.17676]}},
 {"type":"Feature","properties":{"name":"Kaahira","kind":"city"},"geometry":{"type":"Point","coordinates":[31.2357,30.0444]}},
 {"type":"Feature","properties":{"name":"Karaacii","kind":"city"},"geometry":{"type":"Point","coordinates":[67.0099,24.8607]}},
 {"type":"Feature","properties":{"name":"Karakaas","kind":"city"},"geometry":{"type":"Point","coordinates":[-66.9036,10.4806]}},
