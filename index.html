@@ -184,9 +184,22 @@ map.getContainer().addEventListener("contextmenu", e => {
 });
 
 /* MENYUU */
-map.on("contextmenu", e => {
-  alert("MENYUU KAARYA-ONG KARRE");
-});
+function showContextMenu(latlng) {
+  L.popup({
+    closeButton: true,
+    className: "context-menu"
+  })
+    .setLatLng(latlng)
+    .setContent(`
+      <div class="menu">
+        <div class="menu-item">📍 Getakiiwali-no kela</div>
+        <div class="menu-item">🎯 Getakiiwali-no tuku</div>
+        <div class="menu-item">⭐ Bindu-ong rakam</div>
+      </div>
+    `)
+    .openOn(map);
+}
+
 
   </script>
 </body>
