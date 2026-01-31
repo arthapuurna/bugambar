@@ -62,6 +62,7 @@
 {"type":"Feature","properties":{"name":"Bengaluuru","kind":"city"},"geometry":{"type":"Point","coordinates":[77.5937,12.9716]}},
 {"type":"Feature","properties":{"name":"Berlin","kind":"city"},"geometry":{"type":"Point","coordinates":[13.4049,52.5200]}},
 {"type":"Feature","properties":{"name":"Bryuseil","kind":"city"},"geometry":{"type":"Point","coordinates":[4.3517,50.8503]}},
+{"type":"Feature","properties":{"name":"Bwenos-Aires","kind":"city"},"geometry":{"type":"Point","coordinates":[-58.44363,-34.63388]}},
 {"type":"Feature","properties":{"name":"Cennai","kind":"city"},"geometry":{"type":"Point","coordinates":[80.2707,13.0827]}},
 {"type":"Feature","properties":{"name":"Chenktu","kind":"city"},"geometry":{"type":"Point","coordinates":[104.0667,30.6667]}},
 {"type":"Feature","properties":{"name":"Chunkchin","kind":"city"},"geometry":{"type":"Point","coordinates":[106.5500,29.5628]}},
