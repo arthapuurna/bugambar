@@ -202,9 +202,11 @@ map.on("contextmenu", e => {
   showContextMenu(e.latlng);
 });
 
-window.lastContextLatLng = latlng;
 
 function showContextMenu(latlng) {
+
+  window.lastContextLatLng = latlng;
+  
   const lat = latlng.lat.toFixed(5);
   const lng = latlng.lng.toFixed(5);
 
