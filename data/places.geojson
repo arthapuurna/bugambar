@@ -130,7 +130,7 @@
 {"type":"Feature","properties":{"name":"Tehraan","kind":"city"},"geometry":{"type":"Point","coordinates":[51.3890,35.6892]}},
 {"type":"Feature","properties":{"name":"Thyencin","kind":"city"},"geometry":{"type":"Point","coordinates":[117.0000,38.0000]}},
 {"type":"Feature","properties":{"name":"Toukyou","kind":"city"},"geometry":{"type":"Point","coordinates":[139.6917,35.6895]}},
-{"type":"Feature","properties":{"name":"Tunkkwan","kind":"city"},"geometry":{"type":"Point","coordinates":[121.5398,25.0478]}},
+{"type":"Feature","properties":{"name":"Tunkkwan","kind":"city"},"geometry":{"type":"Point","coordinates":[113.74694,23.02514]}},
 {"type":"Feature","properties":{"name":"Uhan","kind":"city"},"geometry":{"type":"Point","coordinates":[114.3054,30.5928]}},
 {"type":"Feature","properties":{"name":"Warshaawa","kind":"city"},"geometry":{"type":"Point","coordinates":[21.0122,52.2297]}},
 {"type":"Feature","properties":{"name":"Wenetsya","kind":"city"},"geometry":{"type":"Point","coordinates":[12.3155,45.4408]}},
