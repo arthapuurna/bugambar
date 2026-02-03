@@ -117,7 +117,7 @@
 {"type":"Feature","properties":{"name":"Parii","kind":"city"},"geometry":{"type":"Point","coordinates":[2.3522,48.8566]}},
 {"type":"Feature","properties":{"name":"Penuur","kind":"city"},"geometry":{"type":"Point","coordinates":[18.42332,-33.92203]}},
 {"type":"Feature","properties":{"name":"Peicin","kind":"city"},"geometry":{"type":"Point","coordinates":[116.4074,39.9042]}},
-{"type":"Feature","properties":{"name":"Nordukoreya","kind":"country"},"geometry":{"type":"Point","coordinates":[125.76275,39.03430]}},
+{"type":"Feature","properties":{"name":"Phyangyaan","kind":"country"},"geometry":{"type":"Point","coordinates":[125.76275,39.03430]}},
 {"type":"Feature","properties":{"name":"Praha","kind":"city"},"geometry":{"type":"Point","coordinates":[14.4378,50.0755]}},
 {"type":"Feature","properties":{"name":"Punai","kind":"city"},"geometry":{"type":"Point","coordinates":[73.8553,18.5196]}},
 {"type":"Feature","properties":{"name":"Riyaadhu","kind":"city"},"geometry":{"type":"Point","coordinates":[46.6753,24.7136]}},
