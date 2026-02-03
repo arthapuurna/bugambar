@@ -83,6 +83,7 @@
 {"type":"Feature","properties":{"name":"Edinbara","kind":"city"},"geometry":{"type":"Point","coordinates":[-3.1883,55.9533]}},
 {"type":"Feature","properties":{"name":"Genfu","kind":"city"},"geometry":{"type":"Point","coordinates":[6.13423,46.20026]}},
 {"type":"Feature","properties":{"name":"Haagu","kind":"city"},"geometry":{"type":"Point","coordinates":[4.3007,52.0705]}},
+{"type":"Feature","properties":{"name":"Haidaraabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[78.47586,17.36696]}},
 {"type":"Feature","properties":{"name":"Hamburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[9.9937,53.5511]}},
 {"type":"Feature","properties":{"name":"Harpin","kind":"city"},"geometry":{"type":"Point","coordinates":[126.63663,45.75718]}},
 {"type":"Feature","properties":{"name":"Hiroshima","kind":"city"},"geometry":{"type":"Point","coordinates":[132.4553,34.3853]}},
