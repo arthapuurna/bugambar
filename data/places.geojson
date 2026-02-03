@@ -84,6 +84,7 @@
 {"type":"Feature","properties":{"name":"Genfu","kind":"city"},"geometry":{"type":"Point","coordinates":[6.13423,46.20026]}},
 {"type":"Feature","properties":{"name":"Haagu","kind":"city"},"geometry":{"type":"Point","coordinates":[4.3007,52.0705]}},
 {"type":"Feature","properties":{"name":"Hamburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[9.9937,53.5511]}},
+{"type":"Feature","properties":{"name":"Harpin","kind":"city"},"geometry":{"type":"Point","coordinates":[126.63663,45.75718]}},
 {"type":"Feature","properties":{"name":"Hiroshima","kind":"city"},"geometry":{"type":"Point","coordinates":[132.4553,34.3853]}},
 {"type":"Feature","properties":{"name":"Honkon","kind":"city"},"geometry":{"type":"Point","coordinates":[114.1095,22.3964]}},
 {"type":"Feature","properties":{"name":"Islaamaabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[73.10073,33.71085]}},
