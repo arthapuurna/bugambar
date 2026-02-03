@@ -58,6 +58,7 @@
 {"type":"Feature","properties":{"name":"Urdun","kind":"country"},"geometry":{"type":"Point","coordinates":[36.61194,31.46074]}},
 {"type":"Feature","properties":{"name":"Wenesweila","kind":"country"},"geometry":{"type":"Point","coordinates":[-66.5897,6.4238]}},
 {"type":"Feature","properties":{"name":"Wyetnaam","kind":"country"},"geometry":{"type":"Point","coordinates":[108.2772,14.0583]}},
+{"type":"Feature","properties":{"name":"Abuu-Dhabi","kind":"city"},"geometry":{"type":"Point","coordinates":[54.37744,24.45365]}},
 {"type":"Feature","properties":{"name":"Ahmadaabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[72.5873,23.0258]}},
 {"type":"Feature","properties":{"name":"Akra","kind":"city"},"geometry":{"type":"Point","coordinates":[-0.1969,5.5560]}},
 {"type":"Feature","properties":{"name":"Aljazair","kind":"city"},"geometry":{"type":"Point","coordinates":[3.0875,36.7323]}},
