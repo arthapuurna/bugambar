@@ -64,7 +64,7 @@
 {"type":"Feature","properties":{"name":"Nepaal","kind":"country"},"geometry":{"type":"Point","coordinates":[84.57275,28.16116]}},
 {"type":"Feature","properties":{"name":"Nijerya","kind":"country"},"geometry":{"type":"Point","coordinates":[8.6753,9.0820]}},
 {"type":"Feature","properties":{"name":"Nordukoreya","kind":"country"},"geometry":{"type":"Point","coordinates":[127.31012,40.14585]}},
-{"type":"Feature","properties":{"name":"Nijerya","kind":"country"},"geometry":{"type":"Point","coordinates":[9.39005,62.65729]}},
+{"type":"Feature","properties":{"name":"Norweija","kind":"country"},"geometry":{"type":"Point","coordinates":[9.39005,62.65729]}},
 {"type":"Feature","properties":{"name":"Omaan","kind":"country"},"geometry":{"type":"Point","coordinates":[56.51196,20.23236]}},
 {"type":"Feature","properties":{"name":"Onattada-Arabu-Amiiraatus","kind":"country"},"geometry":{"type":"Point","coordinates":[53.8478,23.4241]}},
 {"type":"Feature","properties":{"name":"Onattadanaadas","kind":"country"},"geometry":{"type":"Point","coordinates":[-98.5795,39.8283]}},
