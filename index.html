@@ -96,8 +96,9 @@
   "Frans",
   "Indonesya",
   "Austraalya",
+  "Kazaakhistaan",
   "Aljazair",
-  "Sa'uudii Arabya",
+  "Sa'uudii-Arabya",
   "Arjentiina",
   "Japan"
 ];
@@ -171,7 +172,7 @@ function updateLabelsVisibility() {
   const zoom = map.getZoom();
 
   /* ===== UURS ===== */
-  if (zoom < 7) {
+  if (zoom < 6) {
     map.removeLayer(cityLayer);
   } else {
     map.addLayer(cityLayer);
