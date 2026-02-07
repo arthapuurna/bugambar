@@ -1,6 +1,7 @@
 {
   "type": "FeatureCollection",
   "features": [
+{"type":"Feature","properties":{"name":"Afgaanistaan","kind":"country"},"geometry":{"type":"Point","coordinates":[67.38188,34.26891]}},
 {"type":"Feature","properties":{"name":"Aljazair","kind":"country"},"geometry":{"type":"Point","coordinates":[3.0875,28.1816]}},
 {"type":"Feature","properties":{"name":"Arjentiina","kind":"country"},"geometry":{"type":"Point","coordinates":[-63.6167,-38.4161]}},
 {"type":"Feature","properties":{"name":"Austraalya","kind":"country"},"geometry":{"type":"Point","coordinates":[133.7751,-25.2744]}},
@@ -33,6 +34,7 @@
 {"type":"Feature","properties":{"name":"Kambouja","kind":"country"},"geometry":{"type":"Point","coordinates":[105.19704,12.69618]}},
 {"type":"Feature","properties":{"name":"Kanada","kind":"country"},"geometry":{"type":"Point","coordinates":[-106.3468,56.1304]}},
 {"type":"Feature","properties":{"name":"Katar","kind":"country"},"geometry":{"type":"Point","coordinates":[51.1839,25.3548]}},
+{"type":"Feature","properties":{"name":"Kenya","kind":"country"},"geometry":{"type":"Point","coordinates":[37.94605,0.68239]}},
 {"type":"Feature","properties":{"name":"Lau","kind":"country"},"geometry":{"type":"Point","coordinates":[103.40581,18.99389]}},
 {"type":"Feature","properties":{"name":"Luksemburgu","kind":"country"},"geometry":{"type":"Point","coordinates":[6.1611,49.7400]}},
 {"type":"Feature","properties":{"name":"Malaisya","kind":"country"},"geometry":{"type":"Point","coordinates":[101.9758,4.2105]}},
@@ -51,7 +53,8 @@
 {"type":"Feature","properties":{"name":"Polan","kind":"country"},"geometry":{"type":"Point","coordinates":[19.1451,51.9194]}},
 {"type":"Feature","properties":{"name":"Portugaal","kind":"country"},"geometry":{"type":"Point","coordinates":[-8.2245,39.3999]}},
 {"type":"Feature","properties":{"name":"Ruus","kind":"country"},"geometry":{"type":"Point","coordinates":[105.3188,61.5240]}},
-{"type":"Feature","properties":{"name":"Sa'uudii Arabya","kind":"country"},"geometry":{"type":"Point","coordinates":[45.0792,23.8859]}},
+{"type":"Feature","properties":{"name":"Sa'uudii-Arabya","kind":"country"},"geometry":{"type":"Point","coordinates":[45.0792,23.8859]}},
+{"type":"Feature","properties":{"name":"Shrii-Lankaa","kind":"country"},"geometry":{"type":"Point","coordinates":[80.81781,7.59021]}},
 {"type":"Feature","properties":{"name":"Singhapura","kind":"country"},"geometry":{"type":"Point","coordinates":[103.8198,1.3521]}},
 {"type":"Feature","properties":{"name":"Sudafrika","kind":"country"},"geometry":{"type":"Point","coordinates":[24.25705,-30.91511]}},
 {"type":"Feature","properties":{"name":"Sudukoreya","kind":"country"},"geometry":{"type":"Point","coordinates":[127.7669,35.9078]}},
