@@ -35,7 +35,7 @@
 {"type":"Feature","properties":{"name":"Luksemburgu","kind":"country"},"geometry":{"type":"Point","coordinates":[6.1611,49.7400]}},
 {"type":"Feature","properties":{"name":"Malaisya","kind":"country"},"geometry":{"type":"Point","coordinates":[101.9758,4.2105]}},
 {"type":"Feature","properties":{"name":"Mekhiku","kind":"country"},"geometry":{"type":"Point","coordinates":[-102.5528,23.6345]}},
-{"type":"Feature","properties":{"name":"Mongolya","kind":"country"},"geometry":{"type":"Point","coordinates":[104.49951,46.47097]}}
+{"type":"Feature","properties":{"name":"Mongolya","kind":"country"},"geometry":{"type":"Point","coordinates":[104.49951,46.47097]}},
 {"type":"Feature","properties":{"name":"Nederlandu","kind":"country"},"geometry":{"type":"Point","coordinates":[5.2913,52.1326]}},
 {"type":"Feature","properties":{"name":"Nijerya","kind":"country"},"geometry":{"type":"Point","coordinates":[8.6753,9.0820]}},
 {"type":"Feature","properties":{"name":"Nordukoreya","kind":"country"},"geometry":{"type":"Point","coordinates":[127.31012,40.14585]}},
