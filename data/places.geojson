@@ -183,6 +183,7 @@
 {"type":"Feature","properties":{"name":"Soul","kind":"city"},"geometry":{"type":"Point","coordinates":[126.9780,37.5665]}},
 {"type":"Feature","properties":{"name":"Stokholmu","kind":"city"},"geometry":{"type":"Point","coordinates":[18.0686,59.3293]}},
 {"type":"Feature","properties":{"name":"Strasburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[7.7521,48.5734]}},
+{"type":"Feature","properties":{"name":"Surabaaya","kind":"city"},"geometry":{"type":"Point","coordinates":[112.71720,-7.35948]}},
 {"type":"Feature","properties":{"name":"Suurata","kind":"city"},"geometry":{"type":"Point","coordinates":[72.8311,21.1702]}},
 {"type":"Feature","properties":{"name":"Taipeyi","kind":"city"},"geometry":{"type":"Point","coordinates":[121.5654,25.0330]}},
 {"type":"Feature","properties":{"name":"Tehraan","kind":"city"},"geometry":{"type":"Point","coordinates":[51.3890,35.6892]}},
