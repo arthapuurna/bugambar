@@ -133,9 +133,11 @@
 {"type":"Feature","properties":{"name":"Haagu","kind":"city"},"geometry":{"type":"Point","coordinates":[4.3007,52.0705]}},
 {"type":"Feature","properties":{"name":"Haidaraabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[78.47586,17.36696]}},
 {"type":"Feature","properties":{"name":"Hamburgu","kind":"city"},"geometry":{"type":"Point","coordinates":[9.9937,53.5511]}},
+{"type":"Feature","properties":{"name":"Hanoyi","kind":"city"},"geometry":{"type":"Point","coordinates":[105.853708,21.027856]}},
 {"type":"Feature","properties":{"name":"Harpin","kind":"city"},"geometry":{"type":"Point","coordinates":[126.63663,45.75718]}},
 {"type":"Feature","properties":{"name":"Hiroshima","kind":"city"},"geometry":{"type":"Point","coordinates":[132.4553,34.3853]}},
 {"type":"Feature","properties":{"name":"Honkon","kind":"city"},"geometry":{"type":"Point","coordinates":[114.1095,22.3964]}},
+{"type":"Feature","properties":{"name":"Houshimin","kind":"city"},"geometry":{"type":"Point","coordinates":[106.702051,10.775291]}},
 {"type":"Feature","properties":{"name":"Islaamaabaadu","kind":"city"},"geometry":{"type":"Point","coordinates":[73.10073,33.71085]}},
 {"type":"Feature","properties":{"name":"Istanbul","kind":"city"},"geometry":{"type":"Point","coordinates":[28.97870,41.00855]}},
 {"type":"Feature","properties":{"name":"Jaipura","kind":"city"},"geometry":{"type":"Point","coordinates":[75.78497,26.90655]}},
@@ -203,6 +205,7 @@
 {"type":"Feature","properties":{"name":"Warshaawa","kind":"city"},"geometry":{"type":"Point","coordinates":[21.0122,52.2297]}},
 {"type":"Feature","properties":{"name":"Wenetsya","kind":"city"},"geometry":{"type":"Point","coordinates":[12.3155,45.4408]}},
 {"type":"Feature","properties":{"name":"Wiin","kind":"city"},"geometry":{"type":"Point","coordinates":[16.38519,48.20848]}},
+{"type":"Feature","properties":{"name":"Wladiwostouku","kind":"city"},"geometry":{"type":"Point","coordinates":[131.88548,43.11567]}},
 {"type":"Feature","properties":{"name":"Woshinkton","kind":"city"},"geometry":{"type":"Point","coordinates":[-77.0369,38.9072]}},
 {"type":"Feature","properties":{"name":"Yarushalaim","kind":"city"},"geometry":{"type":"Point","coordinates":[35.2137,31.7683]}}
   ]
